@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FisioAtlas - Guia de Mobilidade Humana</title>
+    <style>
+        /* Estilos gerais */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Cabeçalho */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003366; /* Azul escuro */
+            color: #FFF200; /* Amarelo */
+            text-align: center;
+            box-shadow: 0 0 20px yellowgreen, 0 0  30px yellowgreen;
+            position: relative;
+            padding: 10px 20px;
+            height: 100px;
+
+            
+           
+        }
+       
+
+      /* From Uiverse.io by Madflows */ 
+/* From Uiverse.io by SujitAdroja */ 
+.btn {
+  color:  rgb(0, 128, 38) ;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid  rgb(0, 128, 38);
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: rgb(0, 128, 38);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+
+#menu{
+            list-style-type: none;
+            padding: 0;
+        }
+        #menu li{
+            display: inline;
+            margin: 0 100px;
+        }
+        #menu a{
+            color:ivory;
+            text-decoration: none;
+        }
+        #menu a:hover{
+            color: #FFF200;
+
+        }
+ /*Menu*/
+ 
+
+
+        /* Nome do site */
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Seção direita do cabeçalho */
+        .header-right {
+            display: flex;
+            align-items: center;
+            background-color: #FFF200; /* Amarelo */
+            padding: 10px 20px ;
+            height: 100px;
+        }
+
+        /* Botão */
+        .header-right button {
+            background-color: #003366; /* Azul escuro */
+            color: #FFFFFF; /* Branco */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .header-right button:hover {
+            background-color: #002244; /* Tom mais escuro para o efeito hover */
+        }
+
+        /* Conteúdo principal */
+        main {
+            padding: 20px;
+        }
+
+        /* Estilo do parágrafo adicional */
+        .sub-title {
+            font-size: 18px;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="logo">FisioAtlas</div>
+        <ul id="menu">
+           
+            <button class="btn">
+              <p><a href="#">Atualizações</a></p>
+            </button> 
+            <button class="btn">
+                <p><a href="#">Artigos de Referência</a></p>
+              </button> 
+              <button class="btn">
+                <p><a href="#">Saiba Mais</a></p>
+              </button> 
+              <button class="btn">
+                <p><a href="#">Conheça o autor</a></p>
+              </button> 
+            
+        </ul>
+        <div class="header-right">
+          
+            <button id="login-btn">login</button>
+        </div>
+        
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main id="content">
+        <h1>Bem-vindo ao FisioAtlas</h1>
+        <p class="sub-title">Ferramenta de instrução ao tratamento da mobilidade humana para todos</p>
+        <p>Seu guia completo para mobilidade humana, saúde e bem-estar. Explore nossos recursos e encontre o melhor caminho para uma vida saudável e ativa.
+            Descubra uma maneira mais simples de aprender 
+        </p>
+    </main>
+    <center>
+    <a href="human-body.html" style="text-decoration: navy;">
+       
+    </center>
+    </a>
+    <div id="footer">
+        <h1>rodapé</h1>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Redireciona para a página de contato
+        document.getElementById('contact-btn').addEventListener('click', function() {
+            window.location.href = 'contato.html'; // Altere o link conforme necessário
+        });
+    </script>
+</body>
+</html>
