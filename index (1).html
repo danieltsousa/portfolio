@@ -30,59 +30,28 @@
         }
        
 
-      /* From Uiverse.io by Madflows */ 
-/* From Uiverse.io by SujitAdroja */ 
-.btn {
-  color:  rgb(0, 128, 38) ;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid  rgb(0, 128, 38);
-  padding: 10px 20px;
-  font-size: 17px;
-  cursor: pointer;
-  font-weight: bold;
-  background: transparent;
-  position: relative;
-  transition: all 1s;
-  overflow: hidden;
-}
 
-.btn:hover {
-  color: white;
-}
-
-.btn::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: -40px;
-  transform: skewX(45deg);
-  background-color: rgb(0, 128, 38);
-  z-index: -1;
-  transition: all 1s;
-}
-
-.btn:hover::before {
-  width: 160%;
-}
 
 #menu{
             list-style-type: none;
             padding: 0;
         }
         #menu li{
-            display: inline;
+            display: inline-block;
             margin: 0 100px;
         }
         #menu a{
+            
             color:ivory;
             text-decoration: none;
         }
         #menu a:hover{
             color: #FFF200;
 
+        }
+        #menu p{
+            display: inline-block;
+            padding: 20px;
         }
  /*Menu*/
  
@@ -117,6 +86,7 @@
             background-color: #002244; /* Tom mais escuro para o efeito hover */
         }
 
+
         /* Conteúdo principal */
         main {
             padding: 20px;
@@ -127,7 +97,12 @@
             font-size: 18px;
             font-weight: normal;
             margin: 10px 0;
+
         }
+
+
+
+       
     </style>
 </head>
 <body>
@@ -136,23 +111,20 @@
         <div class="logo">FisioAtlas</div>
         <ul id="menu">
            
-            <button class="btn">
+       
               <p><a href="#">Atualizações</a></p>
-            </button> 
-            <button class="btn">
+           
                 <p><a href="#">Artigos de Referência</a></p>
-              </button> 
-              <button class="btn">
+              
                 <p><a href="#">Saiba Mais</a></p>
-              </button> 
-              <button class="btn">
+           
                 <p><a href="#">Conheça o autor</a></p>
-              </button> 
+           
             
         </ul>
         <div class="header-right">
           
-            <button id="login-btn">login</button>
+            <button >entrar</a></button>
         </div>
         
     </header>
@@ -161,25 +133,33 @@
     <main id="content">
         <h1>Bem-vindo ao FisioAtlas</h1>
         <p class="sub-title">Ferramenta de instrução ao tratamento da mobilidade humana para todos</p>
+        <center>
         <p>Seu guia completo para mobilidade humana, saúde e bem-estar. Explore nossos recursos e encontre o melhor caminho para uma vida saudável e ativa.
-            Descubra uma maneira mais simples de aprender 
-        </p>
-    </main>
-    <center>
-    <a href="human-body.html" style="text-decoration: navy;">
-       
-    </center>
-    </a>
-    <div id="footer">
-        <h1>rodapé</h1>
-    </div>
 
-    <!-- Scripts -->
-    <script>
-        // Redireciona para a página de contato
-        document.getElementById('contact-btn').addEventListener('click', function() {
-            window.location.href = 'contato.html'; // Altere o link conforme necessário
-        });
-    </script>
+        </center>
+        <p>
+            Descubra uma maneira mais simples de aprender a cuidar do corpo humano.
+        </p>
+            <img id="img" src="vectr.jpg" alt="">
+        
+    
+
+      
+    </main>
+
+    <div>
+    <a href="human-body.html" style="text-decoration: ivory;">
+        <button id="btn-p" style="background-color: #FFF200 ; color: mediumblue; border: solid mediumblue 2px; padding: 10px 20px; cursor: pointer; font-size: 16px;">
+            Acesse o Site
+        </button>
+    </a>
+    </div>
+        
+    
+<footer class="footer">
+    <p>&copy; 2024 Meu site Personalizado | todos os direitos reservados</p>
+</footer>
+
+
 </body>
 </html>
